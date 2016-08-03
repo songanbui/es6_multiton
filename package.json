@@ -1,5 +1,5 @@
 {
-  "name": "es6-multiton",
+  "name": "es6_multiton",
   "version": "1.0.0",
   "description": "An approach to the Multiton pattern using ES6 and NodeJS",
   "contributors": [
