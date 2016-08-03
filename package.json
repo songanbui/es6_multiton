@@ -1,0 +1,42 @@
+{
+  "name": "es6-multiton",
+  "version": "1.0.0",
+  "description": "An approach to the Multiton pattern using ES6 and NodeJS",
+  "contributors": [
+    "Song An Bui <songan.bui@thomsonreuters.com>"
+  ],
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "4.2.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "chai": "^3.4.0",
+    "chai-as-promised": "^5.1.0",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.9.0",
+    "istanbul": "^0.4.1",
+    "jsdoc": "^3.4.0",
+    "lodash": "^4.14.0",
+    "mocha": "^2.3.4",
+    "opener": "^1.4.0",
+    "sinon": "^2.0.0-pre"
+  },
+  "sourceDependencies": {
+    "cta-brick": "*"
+  },
+  "scripts": {
+    "test": "_mocha test/index.js",
+    "codecoverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec && opener ./coverage/lcov-report/index.html",
+    "docs": "jsdoc --readme README.md lib -r -d docs && opener ./docs/index.html"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bson": "^0.4.23",
+    "lodash": "^4.6.1"
+  }
+}
